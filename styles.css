@@ -1,57 +1,67 @@
+html, body {
+  height: 100%; /* Ensures body takes full viewport height */
+  margin: 0; /* Removes default body margin */
+  padding: 0; /* Removes default body padding */
+}
+
 body {
-  background-color: thistle;
-  min-height: 100vh;
-}
-
-#playing-cards {
-  margin-top: 100px;
+  font-family: sans-serif, Arial;
+  background: radial-gradient(circle at 100%, #A050E0, #79CAEA);
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 
-.card {
-  background-color: white;
-  border: 1px solid black;
+.form-container {
+  background-color: #F8F8F8;
+  width: 410px;
+  height: 555px;
+  margin: 0 auto;
+  padding: 0 30px;
   border-radius: 10px;
-  box-shadow: 2px 2px 2px grey;
-  max-width: 250px;
-  min-width: 250px;
-  height: 350px;
-  font: 30px bold;
-  padding: 5px;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
+}
+
+h2 {
+  font-size: 2.1em;
   text-align: center;
+  padding: 1.5em 0 0 0;
+  margin-bottom: 0.7em;
 }
 
-.left {
-  /* display: block; */
-  align-self: flex-start;
+label {
+  display: block;
+  font-size: 1.4em;
+  text-align: center; 
+  color: rgb(100, 100, 100);
+  margin-bottom: 1.3em;
 }
 
-.middle {
-    align-self: center;
-    display: flex;
-    font-size: 80px;
-    flex-direction: column;
+input, textarea {
+  display: block;
+  width: 100%;
+  min-height: 3.4em;
+  margin: 0.6em 0;
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.4em 0 rgba(0, 0, 0, 0.3);
 }
 
-.right {
-  align-self: flex-end;
+#message {
+  margin-bottom: -0.6em;
+  
 }
 
-.flipped {
-  transform: rotate(180deg);
+button {
+  display: block;
+  font-size: 1.5em;
+  color: white;
+  background: #4CAF50;
+  border: none;
+  border-radius: 0.3em;
+  padding: 0.55em 0.8em;
+  margin: 0 auto;
 }
 
-.red {
-  color: red;
-}
-
-.middle-section {
-  display: flex;
-  justify-content: center;
+button:hover {
+  background-color: #449248;
 }
